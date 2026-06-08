@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<title>ENDcraft Rank Shop</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    direction: rtl;
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+
+    /* 💜 بک‌گراند بنفش سایت */
+    background: linear-gradient(-45deg, #0a001a, #1a0033, #2b004d, #120022);
+    background-size: 400% 400%;
+    animation: bgMove 10s ease infinite;
+}
+
+@keyframes bgMove {
+    0% {background-position:0% 50%;}
+    50% {background-position:100% 50%;}
+    100% {background-position:0% 50%;}
+}
+
+/* نور نرم */
+body::before {
+    content: "";
+    position: fixed;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    background: radial-gradient(circle, rgba(200,0,255,0.12) 0%, transparent 60%);
+    animation: glow 12s linear infinite;
+}
+
+@keyframes glow {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+header {
+    padding: 30px;
+    font-size: 32px;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+}
+
+.server-ip {
+    background: rgba(0,0,0,0.5);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+/* 🧊 کارت عادی */
+.rank {
+    background: rgba(255,255,255,0.08);
+    padding: 20px;
+    width: 200px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    transition: 0.3s;
+    backdrop-filter: blur(6px);
+}
+
+.rank:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 20px cyan;
+}
+
+/* Ender ساده */
+.ender {
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Enderking خفن */
+.enderking {
+    background: linear-gradient(135deg, #2b004d, #6a00ff);
+    box-shadow: 0 0 25px rgba(160,0,255,0.5);
+}
+
+/* Sponsor کم‌رنگ */
+.sponsor {
+    opacity: 0.6;
+}
+
+button {
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.info {
+    margin: 30px auto;
+    padding: 15px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    z-index: 2;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    font-size: 14px;
+    opacity: 0.8;
+    position: relative;
+    z-index: 2;
+}
+</style>
+</head>
+
+<body>
+
+<header>🔥 ENDcraft Rank Shop</header>
+
+<div class="server-ip">
+🎮 IP Server: dynamic-8.magmanode.com:25597
+</div>
+
+<div class="container">
+
+<div class="rank ender">
+<h3>Ender</h3>
+<button onclick="buy('Ender')">خرید</button>
+</div>
+
+<div class="rank enderking">
+<h3>Enderking</h3>
+<button onclick="buy('Enderking')">خرید</button>
+</div>
+
+<div class="rank sponsor">
+<h3>Sponsor</h3>
+<button onclick="buy('Sponsor')">خرید</button>
+</div>
+
+<div class="rank"><h3>Titan</h3><button onclick="buy('Titan')">خرید</button></div>
+<div class="rank"><h3>Emerald</h3><button onclick="buy('Emerald')">خرید</button></div>
+<div class="rank"><h3>Diamond</h3><button onclick="buy('Diamond')">خرید</button></div>
+<div class="rank"><h3>VIP</h3><button onclick="buy('VIP')">خرید</button></div>
+<div class="rank"><h3>Gold</h3><button onclick="buy('Gold')">خرید</button></div>
+<div class="rank"><h3>Iron</h3><button onclick="buy('Iron')">خرید</button></div>
+
+</div>
+
+<!-- 👇 اطلاعات پایین سایت -->
+<div class="info">
+🛒 برای خرید رنک روی دکمه «خرید» کلیک کنید و وارد روبیکا شوید، سپس سفارش خود را ثبت کنید.<br><br>
+📩 روبیکا: @xjames666
+</div>
+
+<footer>
+👑 Owner: thefaraz81 <br>
+Co_Owner: karen <br>
+Co_Owner: khatari_ <br>
+Developer: hossan5162
+</footer>
+
+<script>
+function buy(rank){
+    window.location.href = "https://rubika.ir/xjames666";
+    alert("سفارش رنک " + rank + " ثبت شد!");
+}
+</script>
+
+</body>
+</html>
